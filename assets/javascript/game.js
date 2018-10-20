@@ -65,8 +65,11 @@ function chooseCharacter (chosenCharacter){
 }
 
 //pass on obj properties to defender
-function chooseDefender (chooseDefender){
-    enemyDefender.name
+function chooseDefender (chosenDefender){
+    enemyDefender.name = chosenDefender.name;
+    enemyDefender.health = chosenDefender.health;
+    enemyDefender.counterAttack= chosenDefender.counterAttack;
+    enemyDefender.attack = chosenDefender.attack;
 }
 //make an object for attack in each function that display the "name" hp as myHP
     
