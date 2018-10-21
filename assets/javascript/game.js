@@ -1,7 +1,7 @@
 // CREATE on click events for game to run a scenario
 document.ready = function() {
 
-  $("#obi").click(game1);
+  $("#obi").click();
   $("#maul").click();
   $("#skywalker").click();
   $("#sidious").click();
@@ -11,7 +11,7 @@ document.ready = function() {
 //create empty objects for my character to append attributes
 
 var myPlayer = {};
-var enemyDefender= {};
+var enemyDefender = {};
 
 //booleans to check for circumstances
 var gameStart = false;
@@ -19,17 +19,17 @@ var gameOver = false;
 var playerChosen = false;
 var defenderChosen = false;
 //var that changes images into strings
-var imageObi = $("#obi").html
+var imageObi = $("#obi").html;
 var imageMaul = $("#maul").html;
 var imageSidious = $("#sidious").html;
-var imageSkywalker = $("#skywalker")
+var imageSkywalker = $("#skywalker").html;
 
 //objects for each character
-var obiwan ={
+var obiwan = {
     name: "Obi-Wan",
     health:0,
-    attackPower:0,
-    counterAttack:0,
+    attackPower:8,
+    counterAttack:10,
 };
 var darthmaul = {
     name:"Darth-Maul",
@@ -61,6 +61,7 @@ function chooseCharacter (chosenCharacter){
   myPlayer.health = chosenCharacter.health;
   myPlayer.counterAttack = chosenCharacter.counterattack;
   myPlayer.attack = chosenCharacter.attack;
+    console.log(this)
     
 }
 
@@ -77,7 +78,29 @@ function chooseDefender (chosenDefender){
 //create scenearios where once the character is selected, and the defender is selected that we can attack.
 //create a scenario where the selected
     
-function game1 (){
-    
+function obiwanGame (){
+    if(playerChosen && gameOver&& gameStart){
+        gameStart = true;
+        chooseCharacter(obiwan);
+        $("#my-character").append(imageObi);
+       
+        //append obiwan image with stats onto my player div
+        //setup on click function for attack 
+        $("#attack").click(function (){
+            
+        })
+
+
+    }
     
 }
+
+//create function for removing photos from where they are and appending them into #enemies-left
+
+//creage function where player chosen and player
+
+//create conditional for a game over scenario if hp is less than 0
+
+//create conditional for a winner scenario and calculate math functions to properly add and subtract
+
+//setup a
