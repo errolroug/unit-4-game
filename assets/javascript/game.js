@@ -97,10 +97,10 @@ function obiwanGame (){
 
 //create function for removing photos from where they are and appending them into #enemies-left
 
-//creage function where player chosen and player
+//create function where player chosen and enemydefender calculate points to complete attacks
 
 //create conditional for a game over scenario if hp is less than 0
 
-//create conditional for a winner scenario and calculate math functions to properly add and subtract
+//create conditional for a winner scenario and calculate to properly adjust attack points for each player
 
-//setup a
+//setup a cleaner way to append statistics using document.write/.html/ or apend/appendchild 
