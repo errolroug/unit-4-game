@@ -103,4 +103,4 @@ function obiwanGame (){
 
 //create conditional for a winner scenario and calculate to properly adjust attack points for each player
 
-//setup a cleaner way to append statistics using document.write/.html/ or apend/appendchild 
+//setup a cleaner way to append statistics using document.write/.html/ or apend/appendchil`12345678u9i0o=-098765432123ewcv c?};'[lpkojihugf`    123=    =909129]`
